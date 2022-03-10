@@ -1,12 +1,10 @@
 cpu: a_int
 fq_1:
-  class: File[]
-  path:
-  - a/file/path
+- class: File
+  path: a/file/path
 fq_2:
-  class: File[]
-  path:
-  - a/file/path
+- class: File
+  path: a/file/path
 gene_info:
   class: File
   path: a/file/path
