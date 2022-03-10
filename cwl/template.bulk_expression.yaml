@@ -1,0 +1,18 @@
+cpu: a_int
+fq_1:
+  class: File[]
+  path:
+  - a/file/path
+fq_2:
+  class: File[]
+  path:
+  - a/file/path
+gene_info:
+  class: File
+  path: a/file/path
+gtf:
+  class: File
+  path: a/file/path
+star_index:
+  class: Directory
+  path: a/dir/path
