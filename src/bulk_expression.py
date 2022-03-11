@@ -104,7 +104,7 @@ def featurecounts_unstranded_readcount(bam, gtf, output_fp, cpu):
         '-p ',  # pair-end reads are considered one fragment; default HTSeq behavior
         '-B ',  # both reads of a read pair need to be mapped
         f'-a {gtf} ',
-        '-o {output_fp} {bam}'
+        f'-o {output_fp} {bam}'
     ]
     return ''.join(pieces)
 
