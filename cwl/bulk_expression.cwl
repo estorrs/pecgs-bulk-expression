@@ -4,13 +4,13 @@ arguments:
   valueFrom: output
 - position: 0
   prefix: --compress-featurecounts-script
-  valueFrom: /pecgs-bulk-expression/bulk_expression/shrink_featurecounts.py
+  valueFrom: /pecgs-bulk-expression/src/shrink_featurecounts.py
 - position: 0
   prefix: --generate-fpkm-script
-  valueFrom: /pecgs-bulk-expression/bulk_expression/gen_fpkm.py
+  valueFrom: /pecgs-bulk-expression/src/gen_fpkm.py
 baseCommand:
 - python
-- /pecgs-bulk-expression/bulk_expression/bulk_expression.py
+- /pecgs-bulk-expression/src/bulk_expression.py
 class: CommandLineTool
 cwlVersion: v1.0
 id: bulk_expression
