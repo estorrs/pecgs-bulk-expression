@@ -40,6 +40,7 @@ args = parser.parse_args()
 
 
 def star_align(fq_1, fq_2, star_index, out_dir, cpu):
+    out_prefix = out_dir + '/' if out_dir[-1] != '/' else out_dir
     pieces = [
         "STAR ",
         f"--readFilesIn {fq_1} {fq_2} ",
@@ -69,7 +70,7 @@ def star_align(fq_1, fq_2, star_index, out_dir, cpu):
         "--genomeLoad NoSharedMemory ",
         "--limitBAMsortRAM 0 ",
         "--limitSjdbInsertNsj 1200000 ",
-        f"--outFileNamePrefix {out_dir} ",
+        f"--outFileNamePrefix {out_prefix} ",
         "--outFilterIntronMotifs None ",
         "--outFilterMatchNminOverLread 0.33 ",
         "--outFilterMismatchNmax 999 ",
