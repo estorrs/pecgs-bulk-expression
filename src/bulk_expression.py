@@ -114,7 +114,7 @@ def compress_featurecounts(in_fp, out_fp, compress_featurecounts_script):
 
 
 def generate_fpkm(generate_fpkm_script, gene_info, in_fp, out_fp):
-    return f'python {generate_fpkm_script} {input.gene_info} {in_fp} {out_fp}'
+    return f'python {generate_fpkm_script} {gene_info} {in_fp} {out_fp}'
 
 
 def run_bulk_expression(
